@@ -10,4 +10,8 @@ public class NewRelease extends Price {
         if (rental.getDaysRented() > 1) return 2;
         return 1;
     }
+	
+	double getCharge(Rental rental){
+		return rental.getDaysRented() * 3;
+	}
 }
